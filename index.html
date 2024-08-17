@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario simples</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <form action="https://api.sheetmonkey.io/form/bBpVGai4ZppYab1EHbdbBD" method="post">
+        
+        <h1>Formulario</h1>
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" name="Nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div>
+            <label for="sobrenome">Sobrenome:</label>
+            <input id="sobrenome" type="text" name="Sobrenome" placeholder="Digite seu sobrenome">
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="E-mail" id="email" placeholder="Digite seu email">
+        </div>
+
+        <div>
+            <label for="like">Gostou do meu form?</label> <br>
+            <select name="like" id="like" required>
+                <option selected disabled>Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="talvez">talvez</option>
+                <option value="nao">Não</option>
+            </select>
+            
+        </div>
+
+        <div>
+            <button type="reset" class="btn">Limpar</button>
+            <button type="submit" class="btn">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>

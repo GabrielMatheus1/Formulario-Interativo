@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aqua;
+}
+
+form {
+    justify-content: space-around;
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 50px auto;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+#like {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    width: 50px;
+    padding: 5px 2px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
