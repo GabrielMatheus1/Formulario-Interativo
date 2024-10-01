@@ -1,52 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario simples</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>formgh</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <form action="https://api.sheetmonkey.io/form/bBpVGai4ZppYab1EHbdbBD" method="post">
+    
+<main>
+  
+  
+
+      <div class="conteudo-form">
+    
+    <h1>Inscreva-se</h1>
+    
+    <div class="load-form" id="load-form">
+      <div class="loading-icon"></div>
+      <h3>Processando dados</h3>
+    </div>
+    
+<form action="https://formsubmit.co/gabriel65451@gmail.com" method="POST">
+
+  
+    <div id="step-1" class="step active">
+      
+      
+      <div class="campos">
+        <label for="nome">Digite seu nome!</label>
+        <input type="text" id="nome" name="name">
+      </div>
+      
+      
+      <div class="btns">
+        <button id="next-btn1" disabled>Continuar</button>
+      </div>
+      
+      <p>Ao enviar seus dados, você declara estar de acordo
+        com nossa <a href="#">Política de Privacidade</a>.</p>
+      
+    </div>
+
+
+    
+
+    <div id="step-2" class="step ">
+      
+      <div class="campos">
+        <label for="phone">Digite seu WhatsApp!</label>
         
-        <h1>Formulario</h1>
+        <input type="tel" id="phone" maxlength="11" name="tel">
+        <span id="inf-phone">Ex: (11) 91234-1234</span>
+      </div>
+     
+      <div class="btns">
+        <button id="back-btn2">Voltar</button>
+        <button id="next-btn2" disabled>Continuar</button>
+      </div>
+      
+      <p>Ao enviar seus dados, você declara estar de acordo
+        com nossa <a href="#">Política de Privacidade</a>.</p>
+      
+    </div>
+    
+    
 
-        <div>
-            <label for="nome">Nome:</label>
-            <input id="nome" type="text" name="Nome" placeholder="Digite seu nome" required>
-        </div>
+    <div id="step-3" class="step ">
 
-        <div>
-            <label for="sobrenome">Sobrenome:</label>
-            <input id="sobrenome" type="text" name="Sobrenome" placeholder="Digite seu sobrenome">
-        </div>
+      <div class="campos">
+        
+        <label for="email">Digite seu email!</label>
+        <input type="email" id="email" name="email">
+      </div>
+      
+      
+      <div class="btns">
+      <button id="back-btn3">Voltar</button>
+      <button id="submit-btn" type="submit" disabled>Concluir</button>
+      </div>
+      
+       <p>Ao enviar seus dados, você declara estar de acordo
+        com nossa <a href="#">Política de Privacidade</a>.
+      </p>
+      
+    </div>
+    
+      <div id="step-4" class="step">
 
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="email" name="E-mail" id="email" placeholder="Digite seu email">
-        </div>
+      <h5>Parabéns, sua inscrição foi enviada!</h5>
+        
+        <h6>Entraremos em contato   em breve.</h6>
+      
+      </div>
+    
+  </div>
+  </form>
+</main>
 
-        <div>
-            <label for="like">Gostou do meu form?</label> <br>
-            <select name="like" id="like">
-                <option selected disabled>Selecione</option>
-                <option value="sim">Sim</option>
-                <option value="talvez">talvez</option>
-                <option value="nao">Não</option>
-            </select>     
-        </div>
-        <div>
-            <label for="txt">Deixe seu comentario!</label>
-            <textarea name="Comentario" id="txt"></textarea>
-        </div>
+  
 
-        <div>
-            <button type="reset" class="btn">Limpar</button>
-            <button type="submit" class="btn">Enviar</button>
-        </div>
-    </form>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
