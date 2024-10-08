@@ -9,19 +9,17 @@ html {
   width: 100%;
   background-color: black;
 }
-#meu-form {
-  width: 100%;
-  height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+
+/* formularios */
+.form-insc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
+/* animacao de carregamento */
 .load-form {
   position: absolute;
   top: 0;
@@ -34,6 +32,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .loading-icon {
   width: 100px;
   height: 100px;
@@ -49,29 +48,30 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-
 .form-insc img {
-  text-align: : center;
-}
-.conteudo-form {
-  width: 500px;
-  height: 450px;
-  margin: 50px auto;
-  padding: 50px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  background-color: #041a28;
-  color: #fff;
-  
-  position: relative;
-  overflow: hidden;
+    width: 200px;
 }
 
-h1 {
+/* */
+.conteudo-form {
+    width: 500px;
+    height: 450px;
+    margin: 50px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #041a28;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+h2 {
   margin-bottom: 20px;
   text-align: center;
 }
 
+/* passos do formulario */
 .step {
   display: none;
 }
@@ -121,7 +121,7 @@ button[disabled], button[disabled]:hover {
 }
 
 button {
-  background: #123c56; /* Verde */
+  background: #123c56;
   border: 1px solid #e6e6e6;
   color: white;
   padding: 15px 32px;
@@ -163,3 +163,4 @@ button:active {
   font-size: 20px;
   text-align: center;
 }
+/* fim formulario */
