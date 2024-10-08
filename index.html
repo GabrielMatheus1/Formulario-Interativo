@@ -4,37 +4,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>formgh</title>
-  <link href="estilo.css" rel="stylesheet" type="text/css" />
+  <title>form</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  
+       <!-- formulario de inscricao -->
+ <section class="form-insc">
+         
+  <img src="imgs/Logo - Form.png">
+  
+            
+  <div class="conteudo-form">
     
-<main>
-  
-  
+  <form id="form" action="https://sheetdb.io/api/v1/uvlkbzlcj05oj" method="post">
 
-      <div class="conteudo-form">
+    <h2>Inscreva-se</h2>
     
-<form action="https://sheetdb.io/api/v1/uvlkbzlcj05oj" method="POST">
-    <h1>Inscreva-se</h1>
-    
-    <div class="load-form" id="load-form">
+      <!-- load entre steps -->
+      <div class="load-form" id="load-form">
       <div class="loading-icon"></div>
       <h3>Processando dados</h3>
-    </div>
-    
-
-  
-    <div id="step-1" class="step active">
+      </div>
       
+      <!-- primeira parte nome -->
+    <div id="step-1" class="step active">
       
       <div class="campos">
         <label for="nome">Digite seu nome!</label>
-        <input type="text" id="nome" name="Name">
+        <input type="text" id="nome" name="Nome" required>
       </div>
-      
-      
+       
       <div class="btns">
         <button id="next-btn1" disabled>Continuar</button>
       </div>
@@ -43,17 +44,15 @@
         com nossa <a href="#">Política de Privacidade</a>.</p>
       
     </div>
-
-
     
-
+      <!-- segunda parte whatsapp -->
     <div id="step-2" class="step ">
       
       <div class="campos">
         <label for="phone">Digite seu WhatsApp!</label>
         
-        <input type="tel" id="phone" maxlength="11" name="Telefone">
-        <span id="inf-phone">Ex: (11) 91234-1234</span>
+        <input type="tel" id="phone" maxlength="11" name="Telefone" required>
+        <span id="inf-phone">Ex: (11)91234-1234</span>
       </div>
      
       <div class="btns">
@@ -66,24 +65,19 @@
       
     </div>
     
-    
 
+      <!-- terceira parte email -->
     <div id="step-3" class="step ">
 
       <div class="campos">
         
-        <label for="email">Digite seu email!</label>
-        <input type="email" id="email" name="Email">
+        <label for="emil">Digite seu email</label>
+        <input type="email" id="emil" name="Email" required>
       </div>
-      
-
-      
-      <input type="hidden" name="_subject" value="New submission!">
-      <input type="hidden" name="_captcha" value="false">
-
+        
       <div class="btns">
       <button id="back-btn3">Voltar</button>
-      <button id="submit-btn" type="submit" disabled>Concluir</button>
+      <button id="submit-btn" disabled>Concluir</button>
       </div>
       
        <p>Ao enviar seus dados, você declara estar de acordo
@@ -92,6 +86,7 @@
       
     </div>
     
+      <!-- quarta parte final -->
       <div id="step-4" class="step">
 
       <h5>Parabéns, sua inscrição foi enviada!</h5>
@@ -99,11 +94,11 @@
         <h6>Entraremos em contato   em breve.</h6>
       
       </div>
-    </form>
+    
+         </form>
   </div>
-  
-</main>
-
+   
+  </section>
   
 
 
