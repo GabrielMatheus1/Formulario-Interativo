@@ -57,6 +57,7 @@ html {
     width: 500px;
     height: 450px;
     margin: 50px auto;
+    display: flex;
     padding: 50px;
     border: 1px solid #ccc;
     border-radius: 25px;
