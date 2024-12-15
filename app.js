@@ -36,7 +36,6 @@ botaoUmForm.addEventListener('click', () => {
         name = inputName.value;
 
     }
-    console.log(name);
 });
 
 
@@ -77,7 +76,6 @@ botaoDoisFormNext.addEventListener('click', () => {
         loadFormulario();
         stepDois.classList.remove('active');
         stepTres.classList.add('active');
-        console.log(phone);
     }
 });
 
@@ -121,7 +119,6 @@ botaoTresFormNext.addEventListener('click', () => {
         loadFormulario();
         stepTres.classList.remove('active');
         stepQuatro.classList.add('active');
-        console.log(email);
     }
 });
 
