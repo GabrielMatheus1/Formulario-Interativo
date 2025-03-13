@@ -1,0 +1,182 @@
+/* formularios */
+.form-insc {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: URL('imgs/backgrounds/Redes-Form-Dep.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;   
+}
+
+/* animacao de carregamento */
+.load-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-icon {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #f3f3f3; 
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  margin: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.form-insc img {
+  width: 150px;
+  position: relative;
+  left: 30px;
+}
+
+/* */
+.conteudo-form {
+  width: 500px;
+  height: 450px;
+  margin: 50px auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background-color: #041a28;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  background-image: url('imgs/backgrounds/Fundo-Form.png');
+  background-position: -50px 10px;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 10px #fff;
+}
+
+.conteudo-form h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+/* passos do formulario */
+.step {
+  display: none;
+}
+
+.step.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+  height: 100%;
+}
+
+.campos {
+  width: 100%;
+}
+
+.step label{
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+.step input {
+  color: #e6e6e6;
+  width: 90%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background: none;
+}
+
+.step #inf-phone {
+  display: block;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+
+button[disabled], button[disabled]:hover {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2);
+  transition: 0.4s ease-in-out;
+  transform: translate(0);
+  animation: none;
+}
+
+button {
+  background: #123c56;
+  border: 1px solid #e6e6e6;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  animation: btns-efects 2s;
+}
+
+@keyframes btns-efects {
+  100% {
+    background: #800080;
+  }
+  
+}
+
+.campos #nonee {
+  display: flex;
+  position: absolute;
+  right: 52%;
+  bottom: -6px
+}
+
+.checkk {
+  display: none;
+  position: relative;
+  padding-left: 10%;
+}
+
+button:active {
+  transform: translateY(4px);
+  transition: 0.4s ease-in-out;
+}
+
+
+.step a, .step p {
+  font-size: 12px;
+  color: #fff;
+}
+
+.step h4 {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.step h5 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+/* fim formulario */
